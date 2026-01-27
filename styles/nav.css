@@ -1,13 +1,14 @@
 /* Common nav styles */
 .nav-wrapper {
-    height: 190px;
+    min-height: 190px;
     background-color: #11122b;
     color: #cbcbcb;
     /* Flexbox container */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 100px;
+    padding: 2rem 5vw;
+    flex-wrap: wrap;
 }
 
 /* Navigation Left Column */
@@ -56,8 +57,8 @@
 }
 
 .nav-wrapper > .center-column > .banner-image img {
-    width: 216px;
-    height: 100%;
+    max-width: 216px;
+    height: auto;
 }
 
 .nav-wrapper > .center-column > .link-wrapper {
@@ -121,4 +122,44 @@
 
 .nav-wrapper > .right-column > .address-wrapper a:hover {
     color: #cea135;
+}
+
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .left-column,
+    .right-column {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .center-column {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .link-wrapper {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-link {
+        width: auto;
+    }
+}
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+    .phone,
+    .hour {
+        font-size: 0.85rem;
+    }
+
+    .nav-wrapper {
+        padding: 1rem;
+    }
 }
