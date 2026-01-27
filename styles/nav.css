@@ -85,7 +85,6 @@
     letter-spacing: 2px;
 }
 
-
 /* Navigation Right Column */
 .nav-wrapper > .right-column {
     display: flex;
@@ -124,42 +123,3 @@
     color: #cea135;
 }
 
-@media (max-width: 768px) {
-    .nav-wrapper {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem;
-    }
-
-    .left-column,
-    .right-column {
-        justify-content: center;
-        margin: 10px 0;
-    }
-
-    .center-column {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .link-wrapper {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .nav-link {
-        width: auto;
-    }
-}
-
-/* 📱 Small Phones */
-@media (max-width: 480px) {
-    .phone,
-    .hour {
-        font-size: 0.85rem;
-    }
-
-    .nav-wrapper {
-        padding: 1rem;
-    }
-}
